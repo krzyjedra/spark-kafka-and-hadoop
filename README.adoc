@@ -1,0 +1,42 @@
+= Spark, Kafka and Hadoop
+:numbered:
+:toc: preamble
+:toc-title: Table of contents
+
+This application will do in the future following transformations:
+
+1. Writes records to Kafka in JSON format
+JSON example:
+
+{
+"name": "John",
+"surname": "Doe",
+"cats": 1,
+"dogs": 2
+}
+
+1. Reads the data from the topic
+1. Parses the JSONs
+1. Surname to upper case letters
+1. Sum cats and dogs fields and write the result to the new field “animals”.
+1. The result should be written as a parquet file in which every record consists of 3 columns: name (String), surname (String), animals (Integer).
+
+
+== Dependencies
+
+You are going to need the following:
+
+* Java 8+
+* Scala 2.13+
+
+== How to run
+
+*FIXME*
+
+== Example of usage
+
+*FIXME*
+
+== Troubleshooting
+
+*FIXME*
